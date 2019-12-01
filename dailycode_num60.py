@@ -16,7 +16,7 @@ since we can't split it up into two subsets that add up to the same sum.
 def betterSubsetSum(superset, goal):
     if goal == 0:
         return True 
-    if (len(superset) == 0 and sum != 0):
+    if (len(superset) == 0 and goal != 0):
         return False 
     if (superset[-1] > goal):
         return betterSubsetSum(superset[:-1], goal)
